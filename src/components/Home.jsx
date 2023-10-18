@@ -75,7 +75,7 @@ const Home = ({ratio}) => {
                     <p>
                         +
                         {
-                            ratio < 2 && (
+                            ratio < 2.5 && (
                                 <motion.span whileInView={animationClientsCount} ref={clientCount}>100</motion.span>
                             )
                         }
@@ -87,7 +87,7 @@ const Home = ({ratio}) => {
                 <article>
                     <p>
                         +
-                        {ratio < 2 && (
+                        {ratio < 2.5 && (
                            <motion.span whileInView={animationProjectsCount} ref={projectCount}>500</motion.span>
                         )}
                         
@@ -97,7 +97,7 @@ const Home = ({ratio}) => {
 
                 <article data-special>
                     <p>
-                        <span>Contact</span>
+                        <span id='ct'>Contact</span>
                     </p>
                     <span>rahulpanditercs01@gmail.com</span>
                 </article>
